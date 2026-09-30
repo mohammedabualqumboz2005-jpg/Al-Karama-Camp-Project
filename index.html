@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منظومة إدارة مخيم كرامة للنازحين</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+
+    <header class="main-header glass-navbar">
+        <div class="container navbar-flex">
+            <a href="#" class="logo-link">
+                <i class="fa-solid fa-campground logo-icon"></i> 
+                <span class="logo-text">مخيم كرامة</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#dashboard"><i class="fa-solid fa-chart-pie"></i> لوحة التحكم</a></li>
+                    <li><a href="#register"><i class="fa-solid fa-user-plus"></i> تسجيل عائلة</a></li>
+                    <li><a href="#aid-distribution"><i class="fa-solid fa-box-open"></i> توزيع المساعدات</a></li>
+                    <li><a href="#urgent-appeals"><i class="fa-solid fa-triangle-exclamation"></i> نداءات الاستغاثة</a></li>
+                    <li><a href="#contact-us"><i class="fa-solid fa-envelope"></i> تواصل معنا</a></li>
+                </ul>
+            </nav>
+            
+            <div class="emergency-action">
+                <a href="#urgent-appeals" class="btn-emergency">
+                    <i class="fa-solid fa-circle-exclamation"></i> نداء استغاثة عاجل
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="hero-banner-wrapper">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200" alt="إدارة الجهود الإنسانية بمخيم كرامة" class="banner-img">
+        </div>
+        
+        <section id="dashboard" class="section-padding">
+            <h2 class="section-title"><i class="fa-solid fa-chart-line"></i> لوحة التحكم والإحصائيات العامة</h2>
+            <div class="stats-grid">
+                <div class="stat-card glass-card hover-effect">
+                    <div class="stat-icon-box"><i class="fa-solid fa-people-roof"></i></div>
+                    <h3 class="stat-label">عدد العائلات</h3>
+                    <div class="stat-number">1,420</div>
+                </div>
+                <div class="stat-card glass-card hover-effect">
+                    <div class="stat-icon-box"><i class="fa-solid fa-child-reaching"></i></div>
+                    <h3 class="stat-label">عدد الأطفال</h3>
+                    <div class="stat-number">4,850</div>
+                </div>
+                <div class="stat-card glass-card hover-effect">
+                    <div class="stat-icon-box"><i class="fa-solid fa-boxes-packing"></i></div>
+                    <h3 class="stat-label">الطرود الموزعة</h3>
+                    <div class="stat-number">94%</div>
+                </div>
+                <div class="stat-card glass-card hover-effect alert-card">
+                    <div class="stat-icon-box"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <h3 class="stat-label">الحالات الطبية الحرجة</h3>
+                    <div class="stat-number urgent-color">85</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="register" class="section-padding">
+            <div class="form-container glass-card hover-effect">
+                <h2 class="section-title"><i class="fa-solid fa-id-card"></i> نموذج تسجيل عائلة جديدة</h2>
+                <form action="#" method="POST" class="main-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="head-name"><i class="fa-solid fa-user"></i> اسم رب الأسرة الكامل</label>
+                            <input type="text" id="head-name" required placeholder="الاسم الثلاثي أو الرباعي كما في الوثيقة">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="members-count"><i class="fa-solid fa-users"></i> عدد أفراد الأسرة</label>
+                            <input type="number" id="members-count" min="1" required placeholder="مثال: 5">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="id-number"><i class="fa-solid fa-passport"></i> رقم الهوية / التعريف</label>
+                            <input type="text" id="id-number" required placeholder="رقم البطاقة الشخصية أو مستند الهوية">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="prev-location"><i class="fa-solid fa-map-location-dot"></i> مكان النزوح السابق</label>
+                            <input type="text" id="prev-location" required placeholder="البلدة أو المدينة الأصلية">
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="special-needs"><i class="fa-solid fa-wheelchair"></i> الاحتياجات الخاصة أو الحالات المرضية المزمنة</label>
+                            <textarea id="special-needs" rows="3" placeholder="يرجى كتابة كافة الحالات الطبية أو الإعاقات التي تتطلب رعاية إنسانية خاصة..."></textarea>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <button type="submit" class="btn-submit primary-btn">
+                                <i class="fa-solid fa-floppy-disk"></i> تسجيل العائلة وتأشير البيانات في المنظومة
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="aid-distribution" class="section-padding">
+            <h2 class="section-title"><i class="fa-solid fa-clipboard-list"></i> جدول ومخطط توزيع المساعدات اليومية</h2>
+            <div class="table-responsive">
+                <table class="aid-table">
+                    <thead>
+                        <tr>
+                            <th><i class="fa-solid fa-map-pin"></i> رقم القاطع</th>
+                            <th><i class="fa-solid fa-user-tag"></i> اسم العائلة</th>
+                            <th><i class="fa-solid fa-hand-holding-hand"></i> نوع المساعدة</th>
+                            <th><i class="fa-solid fa-circle-check"></i> حالة الاستلام</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>قاطع أ (الخيمة 12)</td>
+                            <td>محمد أحمد جابر</td>
+                            <td><span class="badge badge-relief"><i class="fa-solid fa-wheat-awn"></i> إغاثية (سلة غذائية + مياه عذبة)</span></td>
+                            <td><span class="badge badge-success"><i class="fa-solid fa-check"></i> تم الاستلام</span></td>
+                        </tr>
+                        <tr>
+                            <td>قاطع - ب (الخيمة 45)</td>
+                            <td>عائلة خالد سعيد الخضري</td>
+                            <td><span class="badge badge-medical"><i class="fa-solid fa-kit-medical"></i> طبية (أدوية أطفال + أدوية مزمنة) </span></td>
+                            <td><span class="badge badge-pending"><i class="fa-solid fa-hourglass-half"></i> قيد الانتظار</span></td>
+                        </tr>
+                        <tr>
+                            <td>قاطع - ج   (08 الخيمة)</td>
+                            <td>عائلة يوسف صلاح الشريف</td>
+                            <td><span class="badge badge-relief"><i class="fa-solid fa-blanket"></i> إغاثية (مستلزمات إيواء +أغطية شتوية)</span></td>
+                            <td><span class="badge badge-success"><i class="fa-solid fa-check"></i> تم الاستلام</span></td>
+                        </tr>
+                         <tr>
+                            <td>قاطع - ج   (08 الخيمة)</td>
+                            <td>عائلة مازن  إبراهيم عوض</td>
+                            <td><span class="badge badge-relief"><i class="fa-solid fa-blanket"></i> إغاثية (حليب و حفاضات أطفال و مكملات)</span></td>
+                            <td><span class="badge badge-success"><i class="fa-solid fa-check"></i> تم الاستلام</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="urgent-appeals" class="section-padding">
+            <h2 class="section-title"><i class="fa-solid fa-bullhorn text-alert"></i> نداءات الاستغاثة العاجلة والطارئة</h2>
+            <div class="appeals-grid">
+                <div class="appeal-card glass-card hover-effect critical-border">
+                    <div class="appeal-header">
+                        <span class="appeal-tag"><i class="fa-solid fa-triangle-exclamation"></i> حالة طارئة</span>
+                        <h3 class="appeal-title">نقص مياه حاد في القاطع ج</h3>
+                    </div>
+                    <p class="appeal-desc">يعاني القاطع (ج) من انقطاع كامل للمياه الصالحة للشرب وتوقف الضخ بالشبكة المؤقتة، ونناشد لتأمين صهاريج مياه بشكل فوري.</p>
+                    <div class="appeal-footer">
+                        <span><i class="fa-solid fa-location-arrow"></i> الموقع: قاطع ج</span>
+                        <span class="status-badge"><i class="fa-solid fa-fire-flame-curved"></i> حرج جداً</span>
+                    </div>
+                </div>
+                
+                <div class="appeal-card glass-card hover-effect critical-border">
+                    <div class="appeal-header">
+                        <span class="appeal-tag"><i class="fa-solid fa-capsules"></i> حالة طارئة</span>
+                        <h3 class="appeal-title">حاجة ماسة لجرعات أنسولين</h3>
+                    </div>
+                    <p class="appeal-desc">تسجيل نقص حاد في جرعات الأنسولين المبردة للنقطة الطبية بالمخيم، هناك عائلات لديها كبار سن وأطفال بحاجة فوريّة وتأثرت حالتهم الصحية.</p>
+                    <div class="appeal-footer">
+                        <span><i class="fa-solid fa-house-medical"></i> الموقع: النقطة الطبية</span>
+                        <span class="status-badge"><i class="fa-solid fa-hand-holding-medical"></i> طارئ طبي</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-us" class="section-padding">
+            <div class="form-container glass-card hover-effect">
+                <h2 class="section-title"><i class="fa-solid fa-handshake-angle"></i> تواصل معنا (للمؤسسات الشريكة والمتطوعين)</h2>
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="sender-name"><i class="fa-solid fa-building-user"></i> الاسم / اسم الجهة والمنظمة</label>
+                            <input type="text" id="sender-name" required placeholder="أدخل اسمك الكريم أو اسم الهيئة المانحة">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="sender-email"><i class="fa-solid fa-at"></i> البريد الإلكتروني للتواصل</label>
+                            <input type="email" id="sender-email" required placeholder="name@example.com">
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="coordination-type"><i class="fa-solid fa-arrows-spin"></i> نوع التنسيق والتعاون المطلق</label>
+                            <select id="coordination-type" required>
+                                <option value="">اختر مجال التعاون والتنسيق الميداني...</option>
+                                <option value="1">تقديم طرود غذائية ومساعدات عينية</option>
+                                <option value="2">دعم طبي، أدوية، وتشغيل العيادات</option>
+                                <option value="3">تطوع لوجستي وتنظيمي ميداني</option>
+                                <option value="4">مبادرات دعم نفسي وترفيه للأطفال</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="message-text"><i class="fa-solid fa-comment-dots"></i> نص الرسالة وتفاصيل المبادرة الإنسانية</label>
+                            <textarea id="message-text" rows="4" required placeholder="اكتب تفاصيل المبادرة أو الاستفسار لتسهيل الرد السريع من إدارة المنظومة..."></textarea>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <button type="submit" class="btn-submit secondary-btn">
+                                <i class="fa-solid fa-paper-plane"></i> إرسال الرسالة إلى المنظومة المركزية
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-flex">
+            <div class="copyrights">
+                <p><i class="fa-solid fa-copyright"></i> 2026 منظومة إدارة مخيم كرامة للنازحين. جميع الحقوق محفوظة للإدارة العليا.</p>
+            </div>
+            
+            <nav class="footer-social">
+                <ul class="social-links">
+                    <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook social-icon"></i> فيسبوك</a></li>
+                    <li><a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter social-icon"></i> منصة X</a></li>
+                    <li><a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram social-icon"></i> تلغرام الإرسالية</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
